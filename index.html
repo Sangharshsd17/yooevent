@@ -1,0 +1,905 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harshit Task</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    
+     <header> 
+            <nav class="navbar navbar-expand-lg ">
+                <div class="container">
+                <a class="navbar-brand" href="#"><img src="img/BookET_Logo.svg" alt=""></a>
+                <button class="navbar-toggler" onclick="open_btn()" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"><i class="bi bi-list"></i></span>
+                </button>
+                
+
+                <div class=" collapse navbar-collapse" id="navbarSupportedContent">
+                  <div class="mobile_nav">
+                     <div class="row d-flex justify-content-center no-gutters">
+                       <div class="col-md-3 col-6">
+                            <div class="mobile_card">
+                              <i class="bi bi-calendar2-event"></i>
+                            <a class="nav-link" href="#">Host Event</a>
+                            </div>
+                            
+                       </div>
+                       <div class="col-md-3 col-6">
+                        <div class="mobile_card">
+                          <i class="bi bi-heart"></i>
+                          <a class="nav-link" href="#">Wishlist</a>   
+                        </div>
+                          
+                       </div>
+
+                       <div class="col-md-3 col-6">
+                        <div class="mobile_card">
+                          <i class="bi bi-bell"></i>
+                          <a class="nav-link" href="#">Notification</a>
+                        </div>
+                          
+                        </div>
+
+                        <div class="col-md-3 col-6">
+                          <div class="mobile_card">
+                            <img src="img/profile.png" class="img-fluid pb-2" alt="">
+                            <a class="nav-link pt-1" href="#">Profile</a>
+                          </div>
+                            
+                                                  
+                       </div>
+
+                       <div class="row mobile_search  justify-content-center my-4">
+                         <div class="col-md-10 col-sm-12 py-4 ">
+                      <form> 
+                        <div class="form-group">
+                          <label for="email">Date:</label>
+                          <input type="email" class="form-control" placeholder="I want to go out?" >
+                        </div>
+                        <div class="form-group">
+                          <label for="pwd">Location</label>
+                          <input type="text" class="form-control" placeholder="My current Location">
+                        </div>
+                        <div class="form-group">
+                          <label for="pwd">Looking for </label>
+                          <input type="text" class="form-control" placeholder="Place that you love?">
+                        </div>
+                        <button type="submit" class="btn btn-warning">Submit</button>
+                      </form>
+                    </div>
+                      </div>
+                   </div>
+                  
+                  
+                 
+                  </div>
+              </div>
+
+                <div class="event_nav">
+
+                  <div class="form">
+                    <div class="form1">
+                     <label for="text">Date</label>
+                       <input type="text" placeholder="I Want to go out?">
+                   </div>
+                   <div class="form1">
+                     <label for="text">Location</label>
+                     <input type="text"placeholder="My Current Location">
+                   </div>
+                   <div class="form1">
+                   <label for="text">Looking For</label>
+                   <input type="text" placeholder="What are you in the mood for?">
+                    </div>
+                    <button class="search_btn"><i class="bi bi-search"></i></button>
+                   </div> 
+
+                  <ul class="navbar-nav ml-auto">
+                    <li class="nav-item text-center ">
+                      <i class="bi bi-calendar2-event"></i>
+                      <a class="nav-link" href="#">Host Event</a>
+                    </li>
+                    <li class="nav-item text-center ">
+                      <i class="bi bi-heart"></i>
+                      <a class="nav-link" href="#">Wishlist</a>
+                    </li>
+                    <li class="nav-item text-center ">
+                      <i class="bi bi-bell"></i>
+                      <a class="nav-link" href="#">Notification</a>
+                    </li>
+                    <li class="nav-item text-center ">
+                    <img src="img/profile.png" class="img-fluid" alt="">
+                      <a class="nav-link" href="#">Profile</a>
+                    </li>
+                    
+                  </ul>
+                  
+                </div>
+                
+              </nav>
+            </div>
+
+            </header>
+
+            <!------------------ Slider start form here --------------------------->
+
+            <section class="hero_slider pt-4">
+                <div class="container">
+                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img class="d-block w-100" src="img/NoPath.png" alt="First slide">
+                      </div>
+                      <div class="carousel-item">
+                        <img class="d-block w-100" src="img/NoPath.png" alt="Second slide">
+                      </div>
+                      <div class="carousel-item">
+                        <img class="d-block w-100" src="img/NoPath.png" alt="Third slide">
+                      </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Next</span>
+                    </a>
+                  </div>
+                </div>
+            </section>
+
+       
+       <!-------------------------- Slider Ends here ------------------------>
+
+       <section class="event_category">
+         <div class="container mt-5">
+          <div class="title d-flex justify-content-between">
+            <h4 class="font-weight-semibold">Event Category</h4>
+            <h6 class="ml-auto mt-auto">VIEW ALL</h6>
+          </div>
+           <div class="row no-gutters mt-4 d-flex justify-content-center ">
+             <div class="col-lg col-md-4 event_card">
+               <div class="card p-3">
+                <img src="img/undraw_1.svg" class="event-img" alt="">
+                <h5>Music</h5>
+                <h6>24 Events Nearby</h6>
+                <i class="bi bi-arrow-right-circle-fill"></i>
+               </div>
+             </div>
+
+             <div class="col-lg col-md-4 event_card">
+              <div class="card p-3">
+               <img src="img/undraw_2.svg" class="event-img" alt="">
+               <h5>Business & 
+                Startups</h5>
+               <h6>24 Events Nearby</h6>
+               <i class="bi bi-arrow-right-circle-fill"></i>
+              </div>
+            </div>
+
+            <div class="col-lg col-md-4 event_card">
+              <div class="card p-3">
+               <img src="img/undraw_3.svg" class="event-img" alt="">
+               <h5>Arts & Culture</h5>
+               <h6>24 Events Nearby</h6>
+               <i class="bi bi-arrow-right-circle-fill"></i>
+              </div>
+            </div>
+
+            <div class="col-lg col-md-4 event_card">
+              <div class="card p-3">
+               <img src="img/undraw_4.svg" class="event-img" alt="">
+               <h5>Film & Media</h5>
+               <h6>24 Events Nearby</h6>
+               <i class="bi bi-arrow-right-circle-fill"></i>
+              </div>
+            </div>
+
+            <div class="col-lg col-md-4 event_card">
+              <div class="card p-3">
+               <img src="img/undraw_5.svg" class="event-img" alt="">
+               <h5>Food & Drink</h5>
+               <h6>24 Events Nearby</h6>
+               <i class="bi bi-arrow-right-circle-fill"></i>
+              </div>
+            </div>
+           </div>
+         </div>
+       </section>
+
+      <section class="popular_events event">
+        <div class="container mt-5">
+          <div class="title d-flex justify-content-between">
+            <h4 class="font-weight-semibold">Popular Events</h4>
+            <h6 class="ml-auto mt-auto">VIEW ALL</h6>
+          </div>
+          <div class="row">
+           <div class="col-lg-3 col-md-6 col-12">
+             <div class="card">
+            <span class="card_img"><a href="#">
+              <img src="img/card1.png" class="img-fluid" alt="">
+            </a>
+          </span>
+          <div class="card_content d-flex justify-content-between">
+            <div class="event_text">
+              <h6> Sun, Nov 15, 11:00 AM </h6>
+            <h5>Great Qatar Food Festival</h5>
+            <a href="#">Mosman Park, Sydney</a>
+            </div>
+            <div class="link">
+              <div class="event_links">
+              <button class="like_btn">
+                <i class="bi bi-heart"></i>
+              </button>
+            </div>
+
+            <div  class="event_social" >
+              <a href="#"><i class="bi bi-share"></i></a>  
+            </div>  
+            
+          </div>
+            
+          </div>
+             </div>
+           </div>
+           
+
+           <div class="col-lg-3 col-md-6 col-12">
+            <div class="card">
+           <span class="card_img"><a href="#">
+             <img src="img/card2.png" class="img-fluid" alt="">
+           </a>
+         </span>
+         <div class="card_content d-flex justify-content-between">
+           <div class="event_text">
+             <h6> Sun, Nov 15, 11:00 AM </h6>
+           <h5>QAWARIB Qatar
+            International Boat
+            Show 2021</h5>
+           <a href="#">The Pearl Qatar</a>
+           </div>
+           <div class="link">
+             <div class="event_links">
+             <button class="like_btn">
+               <i class="bi bi-heart"></i>
+             </button>
+           </div>
+
+           <div  class="event_social" >
+             <a href="#"><i class="bi bi-share"></i></a>  
+           </div>  
+           
+         </div>
+           
+         </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 col-12">
+            <div class="card">
+           <span class="card_img"><a href="#">
+             <img src="img/card3.png" class="img-fluid" alt="">
+           </a>
+         </span>
+         <div class="card_content d-flex justify-content-between">
+           <div class="event_text">
+             <h6> Sun, Nov 15, 11:00 AM </h6>
+           <h5>Commercial Bank CHI Al
+            SHAQAB Presented by
+            Longines</h5>
+           <a href="#">Al Shaqab</a>
+           </div>
+           <div class="link">
+             <div class="event_links">
+             <button class="like_btn">
+               <i class="bi bi-heart"></i>
+             </button>
+           </div>
+
+           <div  class="event_social" >
+             <a href="#"><i class="bi bi-share"></i></a>  
+           </div>  
+           
+         </div>
+           
+         </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 col-12">
+            <div class="card">
+           <span class="card_img"><a href="#">
+             <img src="img/card4.png" class="img-fluid" alt="">
+           </a>
+         </span>
+         <div class="card_content d-flex justify-content-between">
+           <div class="event_text">
+             <h6> Sun, Nov 15, 11:00 AM </h6>
+           <h5>Tasty Street Qatar at 
+            Katara Cultural Village</h5>
+           <a href="#">Al Gannas </a>
+           </div>
+           <div class="link">
+             <div class="event_links">
+             <button class="like_btn">
+               <i class="bi bi-heart"></i>
+             </button>
+           </div>
+
+           <div  class="event_social" >
+             <a href="#"><i class="bi bi-share"></i></a>  
+           </div>  
+           
+         </div>
+           
+         </div>
+            </div>
+          </div>
+
+          </div>
+        </div>
+      </section>
+
+
+      <section class="Recommended_event event">
+        <div class="container mt-5">
+          <div class="title d-flex justify-content-between">
+            <h4 class="font-weight-semibold">Recommended Events</h4>
+            <h6 class="ml-auto mt-auto">VIEW ALL</h6>
+          </div>
+          <div class="row">
+           <div class="col-lg-3 col-md-6 col-12">
+             <div class="card">
+            <span class="card_img"><a href="#">
+              <img src="img/card5.png" class="img-fluid" alt="">
+            </a>
+          </span>
+          <div class="card_content d-flex justify-content-between">
+            <div class="event_text">
+              <h6> Sun, Nov 15, 11:00 AM </h6>
+            <h5>The International 
+              Handicraft & Traditional
+              Productions Cultural</h5>
+            <a href="#">Mosman Park, Sydney</a>
+            </div>
+            <div class="link">
+              <div class="event_links">
+              <button class="like_btn">
+                <i class="bi bi-heart"></i>
+              </button>
+            </div>
+
+            <div  class="event_social" >
+              <a href="#"><i class="bi bi-share"></i></a>  
+            </div>  
+            
+          </div>
+            
+          </div>
+             </div>
+           </div>
+           
+
+           <div class="col-lg-3 col-md-6 col-12">
+            <div class="card">
+           <span class="card_img"><a href="#">
+             <img src="img/card6.png" class="img-fluid" alt="">
+           </a>
+         </span>
+         <div class="card_content d-flex justify-content-between">
+           <div class="event_text">
+             <h6> Sun, Nov 15, 11:00 AM </h6>
+           <h5>Torba Farmers Market
+            2020</h5>
+           <a href="#">Ceremonial Court, Education City</a>
+           </div>
+           <div class="link">
+             <div class="event_links">
+             <button class="like_btn">
+               <i class="bi bi-heart"></i>
+             </button>
+           </div>
+
+           <div  class="event_social" >
+             <a href="#"><i class="bi bi-share"></i></a>  
+           </div>  
+           
+         </div>
+           
+         </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 col-12">
+            <div class="card">
+           <span class="card_img"><a href="#">
+             <img src="img/card7.png" class="img-fluid" alt="">
+           </a>
+         </span>
+         <div class="card_content d-flex justify-content-between">
+           <div class="event_text">
+             <h6> Sun, Nov 15, 11:00 AM </h6>
+           <h5>Torba Farmers Market
+            2020</h5>
+           <a href="#">The Pearl Qatar</a>
+           </div>
+           <div class="link">
+             <div class="event_links">
+             <button class="like_btn">
+               <i class="bi bi-heart"></i>
+             </button>
+           </div>
+
+           <div  class="event_social" >
+             <a href="#"><i class="bi bi-share"></i></a>  
+           </div>  
+           
+         </div>
+           
+         </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 col-12">
+            <div class="card">
+           <span class="card_img"><a href="#">
+             <img src="img/card8.png" class="img-fluid" alt="">
+           </a>
+         </span>
+         <div class="card_content d-flex justify-content-between">
+           <div class="event_text">
+             <h6> Sun, Nov 15, 11:00 AM </h6>
+           <h5>Sea Caves Water Park</h5>
+           <a href="#">Desert Falls Water and 
+            Adventure park </a>
+           </div>
+           <div class="link">
+             <div class="event_links">
+             <button class="like_btn">
+               <i class="bi bi-heart"></i>
+             </button>
+           </div>
+
+           <div  class="event_social" >
+             <a href="#"><i class="bi bi-share"></i></a>  
+           </div>  
+           
+         </div>
+           
+         </div>
+            </div>
+          </div>
+
+          </div>
+        </div>
+      </section>
+
+
+      <section class="nearby_event event">
+        <div class="container mt-5">
+          <div class="title d-flex justify-content-between">
+            <h4 class="font-weight-semibold">Nearby Events</h4>
+            <h6 class="ml-auto mt-auto">VIEW ALL</h6>
+          </div>
+          <div class="row">
+           <div class="col-lg-3 col-md-6 col-12">
+             <div class="card">
+            <span class="card_img"><a href="#">
+              <img src="img/card9.png" class="img-fluid" alt="">
+            </a>
+          </span>
+          <div class="card_content d-flex justify-content-between">
+            <div class="event_text">
+              <h6> Sun, Nov 15, 11:00 AM </h6>
+            <h5>HOT AIR BALLOON 
+              FLIGHTS OVER THE DOHA</h5>
+            <a href="#">Doha</a>
+            </div>
+            <div class="link">
+              <div class="event_links">
+              <button class="like_btn">
+                <i class="bi bi-heart"></i>
+              </button>
+            </div>
+
+            <div  class="event_social" >
+              <a href="#"><i class="bi bi-share"></i></a>  
+            </div>  
+            
+          </div>
+            
+          </div>
+             </div>
+           </div>
+           
+
+           <div class="col-lg-3 col-md-6 col-12">
+            <div class="card">
+           <span class="card_img"><a href="#">
+             <img src="img/card10.png" class="img-fluid" alt="">
+           </a>
+         </span>
+         <div class="card_content d-flex justify-content-between">
+           <div class="event_text">
+             <h6> Sun, Nov 15, 11:00 AM </h6>
+           <h5>Full Day Desert Safari</h5>
+           <a href="#">Doha, Qatar</a>
+           </div>
+           <div class="link">
+             <div class="event_links">
+             <button class="like_btn">
+               <i class="bi bi-heart"></i>
+             </button>
+           </div>
+
+           <div  class="event_social" >
+             <a href="#"><i class="bi bi-share"></i></a>  
+           </div>  
+           
+         </div>
+           
+         </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 col-12">
+            <div class="card">
+           <span class="card_img"><a href="#">
+             <img src="img/card11.png" class="img-fluid" alt="">
+           </a>
+         </span>
+         <div class="card_content d-flex justify-content-between">
+           <div class="event_text">
+             <h6> Sun, Nov 15, 11:00 AM </h6>
+           <h5>North of Qatar</h5>
+           <a href="#">Doha, Qatar</a>
+           </div>
+           <div class="link">
+             <div class="event_links">
+             <button class="like_btn">
+               <i class="bi bi-heart"></i>
+             </button>
+           </div>
+
+           <div  class="event_social" >
+             <a href="#"><i class="bi bi-share"></i></a>  
+           </div>  
+           
+         </div>
+           
+         </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 col-12">
+            <div class="card">
+           <span class="card_img"><a href="#">
+             <img src="img/card12.png" class="img-fluid" alt="">
+           </a>
+         </span>
+         <div class="card_content d-flex justify-content-between">
+           <div class="event_text">
+             <h6> Sun, Nov 15, 11:00 AM </h6>
+           <h5>Qatar History vs Future</h5>
+           <a href="#">Doha, Qatar</a>
+           </div>
+           <div class="link">
+             <div class="event_links">
+             <button class="like_btn">
+               <i class="bi bi-heart"></i>
+             </button>
+           </div>
+
+           <div  class="event_social" >
+             <a href="#"><i class="bi bi-share"></i></a>  
+           </div>  
+           
+         </div>
+           
+         </div>
+          </div>
+          </div>
+
+          </div>
+        </div>
+      </section>
+
+      <section class="featured_events event">
+        <div class="container mt-5">
+          <div class="title d-flex justify-content-between">
+            <h4 class="font-weight-semibold">Featured Events</h4>
+            <h6 class="ml-auto mt-auto">VIEW ALL</h6>
+          </div>
+          <div class="row">
+           <div class="col-lg-3 col-md-6 col-12">
+             <div class="card">
+            <span class="card_img"><a href="#">
+              <img src="img/card13.png" class="img-fluid" alt="">
+            </a>
+          </span>
+          <div class="card_content d-flex justify-content-between">
+            <div class="event_text">
+              <h6> Sun, Nov 15, 11:00 AM </h6>
+            <h5>Qatar Museum Tour</h5>
+            <a href="#"> Doha, Qatar</a>
+            </div>
+            <div class="link">
+              <div class="event_links">
+              <button class="like_btn">
+                <i class="bi bi-heart"></i>
+              </button>
+            </div>
+
+            <div  class="event_social" >
+              <a href="#"><i class="bi bi-share"></i></a>  
+            </div>  
+            
+          </div>
+            
+          </div>
+             </div>
+           </div>
+           
+
+           <div class="col-lg-3 col-md-6 col-12">
+            <div class="card">
+           <span class="card_img"><a href="#">
+             <img src="img/card14.png" class="img-fluid" alt="">
+           </a>
+         </span>
+         <div class="card_content d-flex justify-content-between">
+           <div class="event_text">
+             <h6> Sun, Nov 15, 11:00 AM </h6>
+           <h5>Longines Global
+            Champions Tour - Doha</h5>
+           <a href="#">Blue Mountains, NSW</a>
+           </div>
+           <div class="link">
+             <div class="event_links">
+             <button class="like_btn">
+               <i class="bi bi-heart"></i>
+             </button>
+           </div>
+
+           <div  class="event_social" >
+             <a href="#"><i class="bi bi-share"></i></a>  
+           </div>  
+           
+         </div>
+           
+         </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 col-12">
+            <div class="card">
+           <span class="card_img"><a href="#">
+             <img src="img/card15.png" class="img-fluid" alt="">
+           </a>
+         </span>
+         <div class="card_content d-flex justify-content-between">
+           <div class="event_text">
+             <h6> Sun, Nov 15, 11:00 AM </h6>
+           <h5>Qatar Sports and 
+            Educational Tour</h5>
+           <a href="#">Surry Hills, Qatar</a>
+           </div>
+           <div class="link">
+             <div class="event_links">
+             <button class="like_btn">
+               <i class="bi bi-heart"></i>
+             </button>
+           </div>
+
+           <div  class="event_social" >
+             <a href="#"><i class="bi bi-share"></i></a>  
+           </div>  
+           
+         </div>
+           
+         </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 col-12">
+            <div class="card">
+           <span class="card_img"><a href="#">
+             <img src="img/card16.png" class="img-fluid" alt="">
+           </a>
+         </span>
+         <div class="card_content d-flex justify-content-between">
+           <div class="event_text">
+             <h6> Sun, Nov 15, 11:00 AM </h6>
+           <h5>Shaikh faisal Camal
+            Race track</h5>
+           <a href="#">Surry Hills, Qatar</a>
+           </div>
+           <div class="link">
+             <div class="event_links">
+             <button class="like_btn">
+               <i class="bi bi-heart"></i>
+             </button>
+           </div>
+
+           <div  class="event_social" >
+             <a href="#"><i class="bi bi-share"></i></a>  
+           </div>  
+           
+         </div>
+           
+         </div>
+          </div>
+          </div>
+
+          </div>
+        </div>
+      </section>
+
+      <section class="featured_Organizers">
+        <div class="container mt-5">
+          <div class="title d-flex justify-content-between">
+            <h4 class="font-weight-semibold">Featured Organizers</h4>
+            <h6 class="ml-auto mt-auto">VIEW ALL</h6>
+          </div>
+        
+        <div class="row mt-4 gy-3 d-flex justify-content-center">
+
+          <div class="col-lg col-md-4 box">
+           <div class="card d-flex justify-content-center text-center">
+            <i class="bi bi-x-lg close"></i>
+             <img src="img/feature_card1.png" class="img-fluid"  alt="">
+             <h6 class="py-1">Qatar Green Leaders</h6>
+             <a href="#">273 Followers</a>
+             <button class="mybtn py-2">Follow</button>
+            
+           </div>
+          </div>
+
+          <div class="col-lg col-md-4 box">
+            <div class="card d-flex justify-content-center text-center">
+              <i class="bi bi-x-lg close"></i>
+               <img src="img/feature_card2.png" class="img-fluid"  alt="">
+               <h6 class="py-1">MOC Doha 2021
+                Managing...</h6>
+               <a href="#">273 Followers</a>
+               <button class="mybtn py-2">Follow</button>
+              
+             </div>
+           </div>
+
+           <div class="col-lg col-md-4 box">
+            <div class="card text-center d-flex   justify-content-center">
+              <i class="bi bi-x-lg close"></i>
+               <img src="img/feature_card1.png" class="img-fluid"  alt="">
+               <h6>Waxdale Certified
+                Launcher Program</h6>
+               <a href="#">273 Followers</a>
+               <button class="mybtn py-2">Follow</button>
+              
+             </div>
+           </div>
+
+           <div class="col-lg col-md-4 box">
+            <div class="card d-flex justify-content-center text-center">
+              <i class="bi bi-x-lg close"></i>
+               <img src="img/feature_card1.png" class="img-fluid"  alt="">
+               <h6>CH2 Agency<br>
+                Bangalore</h6>
+               <a href="#">273 Followers</a>
+               <button class="mybtn py-2">Follow</button>
+              
+             </div>
+           </div>
+
+           <div class="col-lg col-md-4 box">
+            <div class="card d-flex justify-content-center text-center">
+              <i class="bi bi-x-lg close"></i>
+               <img src="img/feature_card1.png" class="img-fluid"  alt="">
+               <h6>CH2 Agency<br>
+                Bangalore</h6>
+               <a href="#">273 Followers</a>
+               <button class="mybtn py-2">Follow</button>
+              
+             </div>
+           </div>
+          </div>
+        </div>
+      </section>
+
+<!------------- footer section start from here ------------->
+      <footer class="mt-5">
+        <div class="container">
+        <div class="row">
+          <div class="footer_card col-lg-4 col-md-4 ">
+           <img src="img/full logo.svg" class="img-fluid" alt="">
+           <h6 class="py-2">Are you an event company? </h6>
+           <button class="mybtn1">Join Us</button>
+          </div>
+          <div class="footer_links col-lg-2 col-md-2 ">
+          <h6 class="font-weight-bold">Quick Link</h6>
+          <ul class="py-2">
+            <li>
+              <a href="#">About us</a>
+          </li>
+            <li>
+              <a href="#">Partners</a>
+          </li>
+            <li>
+              <a href="#">Contact us</a>
+            </li>
+            <li>
+              <a href="#">Privacy Policy</a>
+          </li>
+            <li>
+              <a href="#">Terms of service</a>
+            </li>
+            <li>
+              <a href="#">Warranty policy</a>
+            </li>
+          </ul>
+          </div>
+          <div class="footer_links col-lg-3 col-md-3 ">
+            <h6 class="font-weight-bold">Get in Touch</h6>
+            
+            <ul class="footer-location py-2">
+              <li>
+                <i class="bi bi-geo-alt"></i> 
+                <a href="#">Sherin Tower 857, Sydney</a> 
+              </li>
+
+              <li>
+                <i class="bi bi-envelope-fill"></i> 
+                <a href="mailto:info@booket.com">info@booket.com</a>
+              </li>
+
+              <li>
+                <i class="bi bi-telephone-fill"></i>
+                <a href="tel:+91-9876543210">+91-9876543210</a>
+              </li>
+           </ul>
+            
+          </div>
+          <div class=" footer_follow col-lg-3 col-md-3 pb-5">
+          <h6 class="font-weight-bold">Follow us</h6>
+          <ul>
+            <li>
+              <a href="#"><i class="bi bi-instagram"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="bi bi-twitter"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="bi bi-facebook"></i></a>
+            </li>
+          </ul>
+          <h6 class="font-weight-bold pt-2">Download App</h6>
+          <img src="img/App_Store.png" class="img-fluid" alt="">
+          <img src="img/Play_store.png" class="img-fluid" alt="">
+          </div>
+        </div>
+      </div>  
+      </footer>
+<!-------------- footer section Ends here ------------->
+
+    
+
+<!-- <script src="app.js"></script> -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>

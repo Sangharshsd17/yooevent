@@ -1,0 +1,461 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+    background: #FFFDFB;
+}
+
+.container{
+    max-width: 1220px
+}
+// color variables
+$brand:#502274;
+$light:#fff;
+$orange:#FE7700;
+$gray:#989898;
+$dark:#000;
+
+.title{
+    h4{
+      font-weight: 600;  
+      position: relative;
+      &::after{
+        position: absolute;
+          content:' ';
+          height: 4px;
+          width: 100px;
+          background: $orange;
+          border-radius: 30px;
+          bottom: -10px;
+          left: 0;
+          
+      }
+    }
+    h6{
+        color: $orange;
+        cursor: pointer;
+        font-weight: 600;
+    }
+}
+
+header{
+    nav{
+        background: $brand;
+        height: 90px;
+      button{
+          &.navbar-toggler{
+            border: 1.5px solid $light;
+            background:none;
+            outline: none;
+          }
+        
+          span{
+
+            &.navbar-toggler-icon{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: $light;
+                
+                
+            }
+              
+              
+          }
+      }     
+
+        .mobile_nav{
+           position: relative;
+            z-index: 1000;
+            background: $light;
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+            .mobile_card{
+                border-radius: 10px;
+                margin: 7px;
+                padding: 10px;
+                text-align: center;
+                background: #502274;
+                border: 1.5px solid $brand;
+                box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+                i{
+                    font-size: 25px;
+                    color: $light;
+                }
+                a{
+                    font-size: 14px;
+                    color: $light;
+                }
+            }
+            
+    
+            .mobile_search{
+            
+                box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+                 
+            }
+
+
+
+            @media screen and (min-width:850px) {
+                display: none;
+            }
+
+            
+        }
+       
+    }
+
+
+
+        .event_nav{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: $brand;
+             z-index: 100;
+             width: 100%;
+
+             .form{
+                 padding-top: 2px; 
+                 padding-bottom: 2px; 
+                padding-left:30px;
+                margin-left: 20px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background: $light;
+                border-radius: 30px;
+                
+                .form1{
+                    max-width: 150px;
+                 label{
+    
+                     font-size: 12px;
+                     color:$dark;
+                     font-weight: 900;
+                     margin-bottom:0;
+                 }
+                 input{
+                    border: none;
+                    outline: none;
+                    font-size: 12px;
+                     &::placeholder{
+                        
+                         font-size: 12px;
+                         
+                     }
+                 }
+                
+                }
+    
+                button{
+                    display: inline-block;
+                    width: 50px;
+                    height: 50px;
+                    margin-left: 50px;
+                    cursor: pointer;
+                    &.search_btn{
+                       
+                        margin-right: 2px;
+                        outline: none;
+                        border:none;               
+                        background: #FE7700;
+                        border-radius: 50%;
+                    }
+                    i{
+                        
+                        color: $light;
+                    }
+                }
+                
+            }  
+
+            ul{
+                li{
+                    i{
+                        color: $light;
+                        font-size: 28px;
+                        display: block;
+                        margin-bottom: -10px;
+                    }
+                    a{
+                        font-size: 14px;
+                        &.nav-link{
+                            color:$light;
+                            font-weight: 600;
+                        } 
+                        
+                       
+                    }
+                    
+                }
+            }
+           
+            @media screen and (max-width:1049px){
+                     display: none;  
+            }
+        }
+
+    }
+   
+
+
+
+
+section{
+    &.event_category{
+        .row{
+            .event_card{
+                padding:1%;
+                .card{
+                    // max-width: 232px;
+                    background: $brand;
+                    position: relative;
+                    height: 175px;
+                    color: $light;
+                    img{
+                       position: absolute;
+                       height: 85px; 
+                       right: 15px;
+                       bottom: 15px;
+                    }
+                   
+                    h6{
+                        font-size: 14px;
+                    }
+                    i{
+                        font-size: 30px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.event{
+    .row{
+        .card{
+           margin-top: 25px;
+           border: none;
+
+           .event_text{
+               h6{
+                   margin-top: 7px;
+                   font-size: 12px;
+                   font-weight: 600;
+                   color: $orange;
+               }
+               h5{
+                   width: 85%;
+                   margin-top: -3px;
+                   font-size: 14px;
+                   font-weight: 600;
+               }
+               a{
+                   width: 80%;
+                   font-size: 11px;
+                   font-weight: bold;
+                   color: $gray;
+                   margin-top: -9px;
+                   display: block;
+               }
+           }
+           .link{
+        .event_links{
+            margin-top: -15px;
+            margin-right: 10px;
+             button{
+                 width: 30px;
+                 height: 30px;
+                 border-radius: 50%;
+                 border:none;
+                 outline: none;
+                 background: $light;
+                 box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+                 
+                 cursor: pointer;
+
+                 &.like_btn{
+                     i{
+                         font-size: 17px;
+                         display: flex;
+                         align-items: center;
+                         justify-content: center;
+                         
+                     }
+                 }
+             } 
+            }
+             .event_social{
+                
+                 i{ 
+                     display: block;
+                     margin-top: 15px;
+                     font-size: 20px;
+                     color:$gray;
+                 }
+             }
+           }
+    }
+}
+}
+
+.featured_Organizers{
+    .box{
+    margin-top: 20px;
+        .card{
+            min-height: 300px;
+            
+            position: relative;
+            
+           i{
+              
+               font-size: 20px;
+               position: absolute;
+               top: 7px;
+               right: 7px;
+               cursor: pointer;
+          
+        }
+        img{
+            width: 45px;
+            align-self: center;
+        }
+        h6{
+            font-size: 14px;
+            margin-top:7px;
+            margin-bottom: 12px;
+        }
+        a{ 
+            margin-top: -10px;
+            font-size: 12px;
+            color:$gray;
+        }
+        button{
+            &.mybtn{
+                margin-top: 40px;
+                font-size: 16px;
+                width: 160px;
+                align-self: center;
+                background: transparent;
+                border: 1px solid $orange;
+                border-radius: 30px;
+                outline: none;
+                cursor: pointer;
+                font-weight: 600;
+                color: $orange;
+            }
+        }
+        
+    }
+    }
+}
+
+footer{
+    background:$brand;
+    color: $light;
+
+    .footer_card{
+        height: 320px;
+        margin-top: 5rem;
+       
+       
+        img{
+            height:59px ;
+        }
+        button{
+            &.mybtn1{
+                padding:10px 25px;
+                outline:none;
+                background: $orange;
+                border-radius: 30px;
+                font-size: 14px;
+                font-weight: 600;
+                color: $light;
+                border:2px solid $orange;
+            }
+            &:hover{
+                background:none;
+                border: 2px solid $orange;
+                outline: $orange;
+                color: $light;
+            }
+        }
+        
+    }
+    .footer_links{
+        margin-top: 5rem;
+        
+        ul{
+            li{
+                list-style: none;
+                i{
+                    color:$orange;
+                    margin-right: 5px;
+                }
+                a{
+                 text-decoration: none;
+                 font-size: 14px;
+                 color:$light;
+                }
+            }
+        }
+    }
+    .footer_follow{
+       margin-top: 5rem; 
+       ul{
+           display: flex;
+           li{
+               padding-right: 10px;
+               list-style: none;
+               a{
+                   text-decoration: none;
+                   color:$light;
+                   transition: 0.5s ease;
+                   i{
+                       font-size: 18px;
+                   }
+                   &:hover{
+                       color: $orange;
+                   }
+               }
+
+           }
+       }
+       img{
+           height: 35px;
+           margin-top: 5px;
+       }
+    }
+    @media screen and (max-width:750px) {
+        .row{
+            flex-direction: column;
+            .footer_card{
+                height: auto;
+                text-align: center;
+                width: 100%;
+                margin-bottom: 0;
+            }
+            .footer_links{
+                text-align: center;
+                margin-top: 3rem;
+            }
+            .footer_follow{
+                margin-top:0;
+                justify-content: center;
+                text-align: center;
+                ul{
+                    
+                    justify-content: center;
+                    align-items: center;
+                    
+                }
+            }
+        }
+
+    }
+}
